@@ -55,11 +55,11 @@ navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
 // cta
 
-const firstSection = document.querySelector("h1");
+const ctaSection = document.querySelector("h1");
 const ctaButton = document.querySelector("button");
 const ctaImg = document.querySelector("#cta-img");
 
-firstSection.textContent = siteContent["cta"]["h1"];
+ctaSection.textContent = siteContent["cta"]["h1"];
 ctaButton.textContent = siteContent["cta"]["button"];
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
 
@@ -113,7 +113,6 @@ copyRightText.textContent = siteContent["footer"]["copyright"];
 
 
 
-
 // New Content
 
 const mainLink = document.createElement("a");
@@ -121,7 +120,18 @@ mainLink.textContent = "Great Idea";
 mainLink.href = "#";
 document.querySelector("nav").prepend(mainLink);
 
-const blogLink = document.createElement("a");
-blogLink.textContent = "Blog";
-blogLink.href = "#";
-document.querySelector("nav").appendChild(blogLink);
+const newLink = document.createElement("a");
+newLink.textContent = "New";
+newLink.href = "#";
+document.querySelector("nav").appendChild(newLink);
+
+
+
+mainLink.style.color = 'green';
+newLink.style.color = 'green';
+navLinks[0].style.color = 'green';
+navLinks[1].style.color = 'green';
+navLinks[2].style.color = 'green';
+navLinks[3].style.color = 'green';
+navLinks[4].style.color = 'green';
+navLinks[5].style.color = 'green';
